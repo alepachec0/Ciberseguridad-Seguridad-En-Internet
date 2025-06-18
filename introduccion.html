@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introducción Sobre Ciberseguridad</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: paleturquoise;
+      font-family: 'Open Sans', Arial, sans-serif;
+      padding-bottom: 100px;
+    }
+
+    header {
+      background-color: lightblue;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid lightpink;
+      width: 100%;
+    }
+
+    header h1 {
+      color: salmon;
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .card {
+      width: 300px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .mask {
+      -webkit-mask-image: radial-gradient(circle, black 60%, transparent 61%);
+      mask-image: radial-gradient(circle, black 60%, transparent 61%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+    }
+
+    .info {
+      margin-top: 10px;
+    }
+
+    .info h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #222;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .info p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .boton-inicio {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      background-color: #ffb6c1;
+      color: #333;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .boton-inicio:hover {
+      background-color: #ffa1b0;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #d1c4e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #333;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      .info h3 {
+        font-size: 1rem;
+      }
+
+      .info p {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 13px;
+        padding: 15px;
+      }
+
+      .boton-inicio {
+        font-size: 13px;
+        padding: 8px 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.3rem;
+      }
+
+      .info p {
+        font-size: 0.85rem;
+      }
+
+      footer {
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .boton-inicio {
+        font-size: 12px;
+        padding: 7px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Introducción: Ciberseguridad</h1>
+  </header>
+
+  <section>
+    <div class="gallery">
+      <div class="card">
+        <img src="quees.avif" alt="¿Qué es Ciberseguridad?" class="mask">
+        <div class="info">
+          <h3>¿Qué es Ciberseguridad?</h3>
+          <p>
+            La ciberseguridad es la práctica de proteger la información digital, dispositivos, redes y sistemas contra amenazas y ataques cibernéticos. Se enfoca en garantizar la confidencialidad, integridad y disponibilidad de la información.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="objetivo.jpg" alt="Objetivo de la ciberseguridad" class="mask">
+        <div class="info">
+          <h3>Objetivo Principal</h3>
+          <p>
+            Su objetivo principal es proteger los sistemas, redes y datos contra accesos no autorizados, interrupciones de servicios y ciberataques, manteniendo la información segura y disponible.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="candado.jpg" alt="Importancia de la ciberseguridad" class="mask">
+        <div class="info">
+          <h3>¿Por qué es importante?</h3>
+          <p>
+            Protege contra amenazas maliciosas a computadoras, móviles, servidores y redes. Es clave para resguardar la información personal y empresarial frente a posibles ataques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="index.html" class="boton-inicio">← Volver al inicio</a>
+
+  <footer>
+    &copy; Ciberseguridad: Seguridad En Internet<br>
+    Pacheco Cruz Edith Alejandra<br>
+    4A Programación Matutino<br>
+    Miércoles 18 De Junio Del 2025
+  </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciberseguridad - Consejos de Protección</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: mistyrose;
+      padding-top: 100px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #b2ebf2;
+      padding: 20px;
+      text-align: left;
+      border-bottom: 2px solid #4dd0e1;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #006064;
+      font-size: 24px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #006064;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #004d40;
+    }
+
+    section {
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    section img {
+      width: 300px;
+      height: auto;
+      border: 3px solid #ffccbc;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section img:hover {
+      box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+      border-color: #ffab91;
+    }
+
+    h2 {
+      color: #81c784;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      color: #5d4037;
+      font-size: 16px;
+    }
+
+    ul, ol {
+      background-color: #fce4ec;
+      padding: 20px;
+      border-radius: 10px;
+      color: #4a148c;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #d1c4e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #4a148c;
+    }
+
+    .btn-inicio {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #4a148c;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1001;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-inicio:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 900px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section img {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 5px 0;
+      }
+
+      p, li {
+        font-size: 14px;
+      }
+
+      ul, ol {
+        padding: 15px;
+      }
+
+      .btn-inicio {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Consejos Para Una Ciberseguridad Efectiva</h1>
+    <nav>
+      <a href="#bienvenida">Inicio</a> |
+      <a href="#introduccion">¿Qué es?</a> |
+      <a href="#amenazas">Amenazas</a> |
+      <a href="#consejos">Consejos</a>
+    </nav>
+  </header>
+
+  <section id="bienvenida">
+    <div>
+      <h2>Bienvenido a tu guía sobre Ciberseguridad</h2>
+      <p>Este sitio web te enseñará cómo protegerte en línea, entender las amenazas<br>
+        más comunes y aplicar consejos útiles para evitar virus o ataques cibernéticos.<br>
+        Éste se define como cualquier programa informático que se coloca de forma oculta<br>
+        en un dispositivo, con la intención de comprometer la confidencialidad, integridad o<br>
+        disponibilidad de los datos, las aplicaciones o el sistema operativo.
+      </p>
+    </div>
+    <a href="https://www.youtube.com/watch?v=Y4kH-nWUIpc" target="_blank" rel="noopener noreferrer">
+      <img src="guia.png" alt="Seguridad Digital" />
+    </a>
+  </section>
+
+  <section id="introduccion">
+    <div>
+      <h2>¿Qué es la Ciberseguridad?</h2>
+      <p>
+        La ciberseguridad, también conocida como seguridad digital o seguridad<br>
+        informática, es la práctica de proteger sistemas, redes, datos y dispositivos<br>
+        contra ataques cibernéticos. Esto incluye información personal, cuentas,<br>
+        archivos, fotos e incluso el dinero.<br><br>
+        La ciberseguridad busca garantizar la confidencialidad, integridad y<br>
+        disponibilidad de la información, protegiendo los sistemas digitales y a los<br>
+        usuarios de posibles ataques. 
+      </p>
+    </div>
+    <a href="https://support.microsoft.com/es-es/topic/-qu%C3%A9-es-la-ciberseguridad-8b6efd59-41ff-4743-87c8-0850a352a390" target="_blank" rel="noopener noreferrer">
+      <img src="ciber.png" alt="Ciberseguridad" />
+    </a>
+  </section>
+
+  <section id="amenazas">
+    <div>
+      <h2>Tipos de amenazas comunes</h2>
+      <ul style="list-style-type: square;">
+        <li>Phishing</li>
+        <li>Malware</li>
+        <li>Ransomware</li>
+        <li>Spyware</li>
+        <li>Adware</li>
+      </ul>
+    </div>
+    <a href="https://www.fortinet.com/lat/resources/cyberglossary/types-of-cyber-attacks" target="_blank" rel="noopener noreferrer">
+      <img src="amenazas.png" alt="Amenazas Cibernéticas" />
+    </a>
+  </section>
+
+  <section id="consejos">
+    <div>
+      <h2>Consejos para evitar amenazas y virus</h2>
+      <ul style="list-style-type: circle;">
+        <li><strong>Utiliza contraseñas seguras:</strong> Combina letras, números y símbolos. Evita datos personales.</li>
+        <li><strong>Actualiza tu software regularmente:</strong> Corrige vulnerabilidades que pueden ser explotadas.</li>
+        <li><strong>Instala un buen antivirus:</strong> Mantenlo activo y actualizado.</li>
+        <li><strong>Evita correos sospechosos:</strong> No hagas clic en enlaces desconocidos.</li>
+        <li><strong>Haz copias de seguridad:</strong> Usa la nube o discos externos.</li>
+        <li><strong>No uses WiFi públicas sin protección:</strong> Usa VPN o evita compartir datos.</li>
+        <li><strong>Activa el doble factor de autenticación:</strong> Aumenta la seguridad de tus cuentas.</li>
+      </ul>
+    </div>
+    <a href="https://www.ikusi.com/mx/blog/reducir-amenaza-interna/" target="_blank" rel="noopener noreferrer">
+      <img src="tips.png" alt="Consejos de Seguridad" />
+    </a>
+  </section>
+
+  <footer>
+    &copy; Ciberseguridad: Seguridad En Internet<br>
+    Pacheco Cruz Edith Alejandra<br>
+    4A Programación Matutino<br>
+    Miércoles 18 De Junio Del 2025
+  </footer>
+
+  <a href="index.html" class="btn-inicio" aria-label="Ir a inicio">← Volver al inicio</a>
+
+</body>
+</html>

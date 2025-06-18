@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciberseguridad</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: lightpink;
+      color: #333;
+    }
+
+    header {
+      background-color: lightblue;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid lavender;
+      width: 100%;
+    }
+
+    h1 {
+      color: lightcoral;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    footer {
+      background-color: plum;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      color: #555;
+      width: 100%;
+    }
+
+    .imagen-estilo {
+      border: 3px solid lightskyblue;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 300px;
+      height: 250px;
+      max-width: 100%;
+    }
+
+    .imagen-estilo:hover {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .tabla-bienvenida {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 800px;
+      border-collapse: collapse;
+      background-color: #fff0f5;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .tabla-bienvenida td {
+      padding: 20px;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .tabla-bienvenida:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    ol {
+      width: 220px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 10px;
+    }
+
+    ol li {
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .imagen-estilo {
+        width: 90%;
+        height: auto;
+      }
+
+      .tabla-bienvenida td {
+        font-size: 0.95rem;
+        padding: 15px;
+      }
+
+      ol {
+        width: 90%;
+        padding: 0;
+      }
+
+      ol li {
+        font-size: 0.95rem;
+      }
+
+      footer {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      .tabla-bienvenida td {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+
+      ol li {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ciberseguridad: Seguridad En Internet</h1>
+  </header>
+
+  <p style="text-align: center;">
+    <img src="ciberseguridad.jpg" alt="Imagen sobre ciberseguridad" class="imagen-estilo" />
+  </p>
+
+  <table class="tabla-bienvenida">
+    <tr>
+      <td>
+        ¡Hola! Bienvenido a mi espacio dedicado a la ciberseguridad. Aquí encontrarás información práctica,<br>
+        consejos y herramientas que uso para proteger mis datos, dispositivos y privacidad en internet.<br>
+        <br>
+        <p>La ciberseguridad, también conocida como <a href="https://es.wikipedia.org/wiki/Seguridad_inform%C3%A1tica" rel="noopener noreferrer">seguridad digital</a>, es la práctica de proteger sistemas, redes, datos y dispositivos contra ataques cibernéticos.</p><br>
+        Quiero compartir contigo lo que he aprendido sobre las amenazas digitales más
+        comunes y cómo defendernos de ellas de manera sencilla y efectiva.<br>
+        En esta página podrás explorar temas como protección contra virus,<br>
+        seguridad en redes sociales, manejo de contraseñas y mucho más. Mi objetivo es que juntos aprendamos<br>
+        a navegar seguros en el mundo digital, porque la ciberseguridad es algo que nos afecta a todos. ¡Gracias por visitar y espero que te sea útil!
+      </td>
+    </tr>
+  </table>
+
+  <h3 style="text-align: center; font-family: 'Raleway', sans-serif;">Menú</h3>
+  <ol type="1">
+    <li><a href="introduccion.html">Introducción</a></li>
+    <li><a href="amenzas.html">Tipos De Amenazas</a></li>
+    <li><a href="consejos.html">Consejos Para Prevenir Amenazas o Virus</a></li>
+    <li><a href="pagina3.html">Páginas Consultadas</a></li>
+    <li><a href="conclusion.html">Conclusión Personal</a></li>
+  </ol>
+
+  <footer>
+    &copy; Ciberseguridad: Seguridad En Internet<br />
+    Pacheco Cruz Edith Alejandra<br />
+    4A Programación Matutino<br />
+    Miércoles 18 De Junio Del 2025
+  </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conclusión Personal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8bbd0, #c8e6c9, #ffe0b2, #b3e5fc, #e1bee7);
+      background-size: 800% 800%;
+      animation: gradientMove 15s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header, footer {
+      background-color: #fce4ec;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    header h1, footer {
+      color: #6a1b9a;
+      font-size: 20px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #7e57c2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #5d4037;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 120px;
+      margin-top: 20px;
+      border-radius: 50%;
+      border: 4px solid #f48fb1;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn-inicio {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #88e6e9;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 1001;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-inicio:hover {
+      background-color: #8e24aa;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .btn-inicio {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reflexión Final sobre la Ciberseguridad</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Conclusión Personal</h2>
+      <p>
+        Después de aprender sobre ciberseguridad, me doy cuenta de que es un tema esencial en nuestro día a día. Vivimos conectados constantemente y, aunque disfrutamos de la tecnología, también estamos expuestos a muchos riesgos que pueden afectar nuestra información, identidad e incluso nuestra economía.
+      </p>
+      <p>
+        Protegernos en internet no debe ser una opción, sino una responsabilidad. Tomar medidas simples como usar contraseñas seguras, evitar redes Wi-Fi públicas sin protección o verificar los correos sospechosos puede hacer una gran diferencia. Todos debemos ser conscientes y responsables al navegar en el mundo digital.
+      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="Escudo seguro" />
+    </div>
+  </main>
+
+  <footer>
+    &copy; Ciberseguridad: Seguridad En Internet<br />
+    Pacheco Cruz Edith Alejandra<br />
+    4A Programación Matutino<br />
+    Miércoles 18 De Junio Del 2025
+  </footer>
+
+  <a href="index.html" class="btn-inicio" aria-label="Volver a la página de inicio">← Volver al inicio</a>
+
+</body>
+</html>
